@@ -6,5 +6,6 @@ quarkus:
   smallrye-openapi:
     operation-id-strategy: method
   swagger-ui:
+    always-include: true
     display-operation-id: true
     theme: original
