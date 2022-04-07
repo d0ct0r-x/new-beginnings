@@ -5,7 +5,7 @@ import com.tomlloyd.dao.ParticipantsDao;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 @ApplicationScoped
 public class AppConfig
@@ -14,6 +14,6 @@ public class AppConfig
     @ApplicationScoped
     public ParticipantsDao participantsDao()
     {
-        return new InMemoryParticipantsDao(new HashMap<>());
+        return new InMemoryParticipantsDao(new LinkedHashMap<>());
     }
 }

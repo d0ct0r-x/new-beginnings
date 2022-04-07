@@ -1,3 +1,10 @@
 quarkus:
-  resteasy:
-    path: /api/v1
+  log:
+    category:
+      "com.tomlloyd":
+        level: FINE
+  smallrye-openapi:
+    operation-id-strategy: method
+  swagger-ui:
+    display-operation-id: true
+    theme: original
